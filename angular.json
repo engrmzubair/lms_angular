@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "your-project-name": {
+    "lms-angular": {  
       "projectType": "application",
       "root": "src",
       "sourceRoot": "src",
@@ -11,9 +11,9 @@
       "architect": {
         "build": {
           "options": {
-            "outputPath": "dist/your-project-name",
+            "outputPath": "dist/lms-angular", 
             "index": "src/index.html",
-            "main": "src/main.ts",        
+            "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
@@ -23,11 +23,11 @@
         },
         "serve": {
           "options": {
-            "browserTarget": "your-project-name:build"
+            "browserTarget": "lms-angular:build"  
           }
         }
       }
     }
   },
-  "defaultProject": "your-project-name"
+  "defaultProject": "lms-angular"  
 }
